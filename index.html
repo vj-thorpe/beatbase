@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title id="title">Beatbase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+      <header>
+        <h2 id="tagline1" class="slogan" style="color:#FFFFFF;">Music lives here<span style="color:#f5e74d">.</span></h2>
+        <h2 id="tagline2" class="slogan">Join the community</h2>
+        <section  data-name="basic input" id="sectionindex">
+          <label class="glow" for="email">Enter your email </label>
+          <input id="email" type="email" name="text">
+          <input id="play" class="play" style="background-color: hsl(282, 98%, 57%);" type="submit" value="    ▶    " onclick="return checkforblank()">
+        </section>
+        <div data-name="form">
+    			  <form id="loginform" name="f1" action="#matchpassword.html" onsubmit="return matchpass()">
+    			    <h3 id="signin">Sign in</h3>
+    			    <label for="username">Username:</label>
+              <div class="input-container">
+                <input id="username" class="input"  name="username" placeholder=" enter your username" required>
+              </div>
+    			    <label for="pass">Password:</label>
+              <div class="input-container">
+                <input id="pass" class="input" type="password" name="pass" placeholder=" enter your password" minlength="8" required>
+              </div>
+    			    <label for="cfpass">Confirm password:</label>
+              <div class="input-container">
+                <input style="background-color: hsl(253, 97%, 93%)" id="cfpass" class="input" type="password" name= "cfpass" placeholder=" re-enter password" required>
+              </div>
+    					<input style="background-color: #FFFFFF" type="submit" class="loginbutton" id="login" value="login">
+    			  </form>
+    			</div>
+          <div id="dialogoverlay" onclick="Alert.ok()"></div>
+          <div id="dialogbox">
+            <div>
+              <div id="dialogboxhead"></div>
+              <div id="dialogboxbody"></div>
+              <div id="dialogboxfoot"></div>
+            </div>
+          </div>
+          <div id="dialogoverlay2" onclick="Alert2.ok()">
+            <div id="loggedin">Logged In</div>
+          </div>
+          <p id="tagline" style="color:#FFFFFF;" >Start your journey today֎</p>
+      </header>
+      <nav id="navbar">
+        <div class="logo">
+          <h1>
+            <a id="beatbase" style="color:#caeceb;">beat<span style="color:#0fc7ff;">base 〄</span></a>
+          </h1>
+        </div>
+        <ul class="nav-links">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="base.html">Base</a>
+            </li>
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a href="#" onclick="Alert.render('contact: beatbase@info.uk <br> tel: 080012232311 <br> write to us: 13 Bea Street, London, England, N1 05T')">Contact</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+      </nav>
+      <div class="main">
+        <br>
+        <div class="row">
+          <div class="col-md-12">
+            <h4 id="csoon" >Coming soon</h4>
+          </div>
+          <div class="container" id="container">
+            <div class="col-md-2">
+                <a href="#" class="albumposter" onclick="Alert.render('Feature coming soon!')">
+                  <div class="text-wrapper" id="textwrapper1">
+                    <h5 id="genre1" class="genre">Discover the Latest</h5>
+                  </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="#" class="albumposter" onclick="Alert.render('Feature coming soon!')">
+                  <div class="text-wrapper" id="textwrapper2">
+                    <h5 id="genre2" class="genre">Daily Hip-Hop Mix</h5>
+                  </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="#" class="albumposter" onclick="Alert.render('Feature coming soon!')">
+                  <div class="text-wrapper" id="textwrapper3">
+                    <h5 id="genre3" class="genre">Classical Beats</h5>
+                  </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="#" class="albumposter" onclick="Alert.render('Feature coming soon!')">
+                  <div class="text-wrapper" id="textwrapper4">
+                    <h5 id="genre4" class="genre">Listener's Picks</h5>
+                  </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="#" class="albumposter" onclick="Alert.render('Feature coming soon!')">
+                  <div class="text-wrapper" id="textwrapper5">
+                    <h5 id="genre5" class="genre">Your Rotation</h5>
+                  </div>
+                </a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
